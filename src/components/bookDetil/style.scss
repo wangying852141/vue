@@ -1,0 +1,24 @@
+@import '@/lib/reset.scss';
+.detil {
+    @include flexbox();
+    @include flex-direction(row);
+    @include margin(5px);
+    @include line-height(0.3rem);
+}
+.txt {
+     @include rect(65%,100%);
+     p {
+        @include padding(0 5px);
+     }    
+}
+.img {
+    @include rect(35%, 100%);
+    @include margin(0.2rem );
+    h3{
+        @include margin(0 0 0 5px);
+    }
+    img{
+        @include rect(100%, 100%);
+    }
+    
+}

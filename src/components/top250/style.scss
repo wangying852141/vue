@@ -1,0 +1,6 @@
+@import '@/lib/reset.scss';
+
+
+#test{
+  @include text-color(#f66);
+}

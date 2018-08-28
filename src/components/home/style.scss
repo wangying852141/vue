@@ -1,0 +1,50 @@
+@import '@/lib/reset.scss';
+
+.movieList {
+    li {
+        @include rect(100%, 2rem);
+        @include flexbox();
+        @include flex-direction(row);
+        @include border(0 0 1px 0, #ccc);
+        @include line-height(0.3rem);
+        @include padding(0 5px);
+        @include overflow();
+        img{
+          @include rect(35%, 1.6rem);
+          margin-top:0.2rem ;
+        }
+        div {
+            margin-top: 0.2rem;
+            margin-left: 0.2rem;
+            span {
+                color: red;
+            }
+        }
+    }
+}
+.mint-swipe {
+    @include rect(100%, 1.5rem);
+    img {
+        @include rect(100%, auto);
+    }
+}
+.mint-search {
+   @include rect(100%, 0.44rem); 
+   @include background-color(#fff);
+}
+.fairyTale {
+    @include flexbox();
+    @include flex-direction(row);
+    @include flex-wrap(nowrap);
+    overflow-x:scroll;  
+    margin-top: 0.2rem;  
+    li {
+        @include rect(35%, 100%);
+        @include flexbox();
+        margin-right: 0.3rem;
+        @include flex-direction(column); 
+        img {
+            @include rect(1rem, 1.2rem);
+        }
+    }
+}
